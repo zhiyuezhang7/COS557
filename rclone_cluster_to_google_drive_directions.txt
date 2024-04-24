@@ -1,0 +1,15 @@
+This is a short note about how to upload from your remote cluster (e.g., Genomics, Della) to google drive directly, using rclone.
+
+rclone config
+
+Follow instructions from https://rclone.org/remote_setup/ 
+
+Until this question, choose Y
+Use auto config?
+ * Say Y if not sure
+ * Say N if you are working on a remote or headless machine
+
+Follow instructions from https://nooblinux.com/how-to-connect-rclone-to-google-drive-from-a-remote-server-headless/
+As the link explains, run something locally that looks like 'ssh -L 53682:localhost:53682 -C -N -l zz0324 argo-comp2.princeton.edu'
+
+After connection is completed, proceed with https://rclone.org/drive/
